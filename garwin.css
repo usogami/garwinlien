@@ -103,7 +103,7 @@
 	height: 305px;
 	bottom: 0;
 	margin-top: 211px;
-	position: absolute;
+	position: absolute !important;
 	animation: animatedBackground2 65s linear infinite;
 	-moz-animation: animatedBackground2 65s linear infinite;
 	-webkit-animation: animatedBackground2 65s linear infinite;
