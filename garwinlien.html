@@ -6,6 +6,7 @@
 
 <link rel="stylesheet" type="text/css" href="cssreset.css">
 <link rel="stylesheet" type="text/css" href="garwin.css">
+<link rel="stylesheet" type="text/css" href="nav.css" />
 
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
@@ -33,7 +34,7 @@
 	/* Overwriting styles for the navigation dots (to place it where we want)
 	* --------------------------------------- */
 	.fp-slidesNav.bottom{
-		bottom: 25px;
+		bottom: 40px;
 	}
 
 	/* Bottom menu
@@ -69,6 +70,8 @@
 				menu: '#menu',
 				slidesNavigation: true,
 				autoScrolling: false,
+				navigation:true,
+				responsive: 900,
 				css3: true
 			});
 		});
@@ -76,13 +79,14 @@
 
 </head>
 <body>
-
-<ul id="menu">
-	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Gallery</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">About Me</a></li>
-	<li data-menuanchor="4thpage"><a href="#4thpage">Contact</a></li>
-</ul>
+<div id="nav">
+	<ul id="menu">
+		<li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+		<li data-menuanchor="secondPage"><a href="#secondPage">Gallery</a></li>
+		<li data-menuanchor="3rdPage"><a href="#3rdPage">About Me</a></li>
+		<li data-menuanchor="4thpage"><a href="#4thpage">Contact</a></li>
+	</ul>
+</div>
 
 <div id="fullpage">
 
