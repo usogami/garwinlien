@@ -127,7 +127,7 @@ class ReCaptcha
     }
 
     // your secret key
-$secret = "6LdcmSUTAAAAAG9W5MQUiD146p72kIvx23xCMfPA";
+$secret = "6LdcmSUTAAAAAP4lgy45mCWlYhNby3nWgn5QD4jr";
  
 // empty response
 $response = null;
