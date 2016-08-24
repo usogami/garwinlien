@@ -6,7 +6,7 @@
 #page1 {
 	background: #fff;
 	background-position: bottom;
-	height: 2000px;
+	height: 1200px;
 	width: 100%;
 	float: left;
 	display: block;
@@ -65,8 +65,8 @@
 	margin: -50% auto 0px auto;
 	float: none;
 	display: block;
-	width: 150%;
-	max-width: 1200px;
+	width: 100%;
+	max-width: 1203px;
 	right: -25%;
 	left: -25%;
 	position: absolute;
@@ -100,6 +100,45 @@
 }
 
 
+#moon {
+	float: none;
+	text-align: center;
+	display: block;
+	overflow: visible;
+	margin: auto;
+	position: absolute;
+	top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+	-webkit-animation-name: spinnerRotate;
+    -webkit-animation-duration: 90s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: 90s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: 90s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+@-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
 
 .clouds {
 	background-image: url(imgs/cloud3.png); 
