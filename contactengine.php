@@ -1,52 +1,37 @@
 <?php
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $from = 'From: Garwin'; 
+    $to = 'usogami@gmail.com'; 
+    $subject = 'Hello';
+    $human = $_POST['human'];
+			
+    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+				
+    if ($_POST['submit'] && $human == '4') {				 
+        if (mail ($to, $subject, $body, $from)) { 
+	    echo '<p>Your message has been sent!</p>';
+	} else { 
+	    echo '<p>Something went wrong, go back and try again!</p>'; 
+	} 
+    } else if ($_POST['submit'] && $human != '4') {
+	echo '<p>You answered the anti-spam question incorrectly!</p>';
+    }
 
-require_once('recaptchalib.php');
-$privatekey = "6LdmigAAAAAAAPTBvc0XBOdlKn5dPyTgazNvmHBx";
-$resp = recaptcha_check_answer ($privatekey,
-                                $_SERVER["REMOTE_ADDR"],
-                                $_POST["recaptcha_challenge_field"],
-                                $_POST["recaptcha_response_field"]);
-
-if (!$resp->is_valid) {
-  die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." .
-       "(reCAPTCHA said: " . $resp->error . ")");
-}
-
-$EmailFrom = "usgoami@gmail.com";
-$EmailTo = "usogami@gmail.com";
-$Subject = "Garwinlien.com";
-$Name = Trim(stripslashes($_POST['Name'])); 
-$City = Trim(stripslashes($_POST['City'])); 
-$Email = Trim(stripslashes($_POST['Email'])); 
-$Message = Trim(stripslashes($_POST['Message'])); 
-
-// validation
-$validationOK=true;
-if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
-  exit;
-}
-
-// prepare email body text
-$Body = "";
-$Body .= "Name: ";
-$Body .= $Name;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $Email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $Message;
-$Body .= "\n";
-
-// send email 
-$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
-
-// redirect to success page 
-if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
-}
-else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+    if ($_POST['submit']) {
+    if ($name != '' && $email != '') {
+        if ($human == '4') {				 
+            if (mail ($to, $subject, $body, $from)) { 
+	        echo '<p>Your message has been sent!</p>';
+	    } else { 
+	        echo '<p>Something went wrong, go back and try again!</p>'; 
+	    } 
+	} else if ($_POST['submit'] && $human != '4') {
+	    echo '<p>You answered the anti-spam question incorrectly!</p>';
+	}
+    } else {
+        echo '<p>You need to fill in all required fields!!</p>';
+    }
 }
 ?>

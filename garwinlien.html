@@ -38,8 +38,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <div id="page1">
 
 	<div class="center"> <img src="imgs/sun.png" id="sun"> </div>
-	<div class="center"><img src="imgs/planet.png" id="planet"> </div>
 	<div class="center"><img src="imgs/moon2.png" id="moon"> </div>
+	<div class="center"><img src="imgs/planet.png" id="planet"> </div>
+	
 
 	<div class="clouds">
 		<div class="clouds2">
@@ -85,27 +86,20 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 		<div id="contact-area">
 			
 			<form method="post" action="contactengine.php">
-				<table>
-					<tr>
-						<td class="left"><label for="Name">Name:</label></td>
-						<td><input type="text" name="Name" /></td>
-					</tr>
-					<tr>
-						<td class="left"><label for="Email">Email:</label></td>
-						<td><input type="text" name="Email" /></td>
-					</tr>
-					<tr>
-						<td class="left"><label for="Message">Message:</label></td>
-						<td><textarea name="Message" rows="20" cols="20"></textarea></td>
-					</tr>
-				</table>
-				
-				<div id="google">
-				<div class="g-recaptcha" data-sitekey="6LdcmSUTAAAAAG9W5MQUiD146p72kIvx23xCMfPA"></div></div>
-
-								
-				<input type="submit" name="submit" value="Submit" class="submit-button" />
-
+    			<label>Name</label>
+    			<input name="name" placeholder="Type Here">
+            
+    			<label>Email</label>
+    			<input name="email" type="email" placeholder="Type Here">
+            
+    			<label>Message</label>
+    			<textarea name="message" placeholder="Type Here"></textarea>
+            	
+            	<label>*What is 2+2?</label>
+				<input name="human" placeholder="Type Here">
+    			
+    			<input id="submit" name="submit" type="submit" value="Submit">
+        
 			</form>
 		
 		</div>
