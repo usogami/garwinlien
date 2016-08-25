@@ -4,167 +4,142 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Art of Garwin Lien</title>
 
+<link href='https://fonts.googleapis.com/css?family=Lato|Ubuntu' rel='stylesheet' type='text/css'>
+
 <link rel="stylesheet" type="text/css" href="cssreset.css">
 <link rel="stylesheet" type="text/css" href="garwin.css">
-<link rel="stylesheet" type="text/css" href="nav.css" />
-
-	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="examples.css" />
-	<style>
-
-	/* Style for our header texts
-	* --------------------------------------- */
-	h1{
-		font-size: 5em;
-		font-family: arial,helvetica;
-		color: #000;
-		margin:0;
-	}
-	.intro p{
-		color: #fff;
-	}
-
-	/* Centered texts in each section
-	* --------------------------------------- */
-	.section{
-		text-align:center;
-	}
+<link rel="stylesheet" href="dist/css/lightbox.min.css">
+<link rel="stylesheet" type="text/css" href="css/component1.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/modernizr-2.6.2.min.js"></script>
 
 
-	/* Overwriting styles for the navigation dots (to place it where we want)
-	* --------------------------------------- */
-	.fp-slidesNav.bottom{
-		bottom: 40px;
-	}
 
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7243260-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 
-	#section2 h1{
-		color: #333;
-	}
-
-	</style>
-
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-	<script type="text/javascript" src="jquery.slimscroll.min.js"></script>
-
-	<script type="text/javascript" src="jquery.fullPage.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
-				menu: '#menu',
-				slidesNavigation: true,
-				autoScrolling: false,
-				navigation:true,
-				responsive: 900,
-				css3: true
-			});
-		});
-	</script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 </head>
 <body>
-<div id="nav">
-	<ul id="menu">
-		<li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
-		<li data-menuanchor="secondPage"><a href="#secondPage">Gallery</a></li>
-		<li data-menuanchor="3rdPage"><a href="#3rdPage">About Me</a></li>
-		<li data-menuanchor="4thpage"><a href="#4thpage">Contact</a></li>
-	</ul>
-</div>
 
-<div id="fullpage">
 
-	<div class="section" id="home">
-		<div class="center">
-			<img src="imgs/moon.png" id="moon"> 
-		</div>	
-		
-		
-			<div class="clouds">
-                <div class="clouds2"></div>
-                <div class="clouds1"></div>
-                
-		    </div>	
-		
 
-	</div>
+	<script src="dist/js/lightbox-plus-jquery.min.js"></script>
 
+<div id="page1">
+
+	<div class="center"> <img src="imgs/sun.png" id="sun"> </div>
+	<div class="center"><img src="imgs/moon2.png" id="moon"> </div>
+	<div class="center"><img src="imgs/planet.png" id="planet"> </div>
 	
-	<div class="section" id="gallery">
-	    <div class="slide" id="slide1" data-anchor="slide1">
-			<div class="intro">
-				<h1>Gallery</h1>
-				<p>
-					You can even click on the navigation and jump directly to another section.
-				</p>
-			</div>
-		</div>
 
-	    <div class="slide" id="slide2" data-anchor="slide2">
-			<h1>Slide 2</h1>
-		</div>
-
-		<div class="slide" id="slide3" data-anchor="slide3">
-			<h1>Slide 3</h1>
-		</div>	<div class="slide" id="slide3" data-anchor="slide3">
-			<h1>Slide 4</h1>
-		</div>
-		<div class="slide" id="slide3" data-anchor="slide3">
-			<h1>Slide 5</h1>
-		</div>
-
-		<div class="leaves">
-                <div class="leaves1"></div>
-                <div class="leaves2"></div>
-            </div>  
-	</div>
-
-	<div class="section" id="profile">
-	    <div class="slide" id="slide1" data-anchor="slide1">
-			<div class="intro">
-				<h1>About Me</h1>
-				<p>
-					You can even click on the navigation and jump directly to another section.
-				</p>
-			</div>
-		</div>
-
-	    <div class="slide" id="slide2" data-anchor="slide2">
-			<h1>Skills</h1>
-		</div>
-
-		<div class="slide" id="slide3" data-anchor="slide3">
-			<h1>Experience</h1>
-		</div>	
-		<div class="slide" id="slide4" data-anchor="slide4">
-			<h1>Contact</h1>
+	<div class="clouds">
+		<div class="clouds2">
+			<div class="clouds1"></div>
 		</div>
 	</div>
+</div>
 
-	<div class="section" id="contact">
-		<div class="intro">
-			<h1>Enjoy it</h1>
+<div id="page2">
+	<a id="gallery" class="smooth"></a>
+	<h1> Gallery </h1>
+	<div id="thumbnailwrap">
+		<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/starthumb.png" alt="" /></a>
+		<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/starthumb.png" alt="" /></a>
+		<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/starthumb.png" alt="" /></a>
+		<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/starthumb.png" alt="" /></a>
+		<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/starthumb.png" alt="" /></a>
+		<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/starthumb.png" alt="" /></a>
+		<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/starthumb.png" alt="" /></a>
+		<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/starthumb.png" alt="" /></a>
+		<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/starthumb.png" alt="" /></a>
+		<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/starthumb.png" alt="" /></a>
+	</div>
+	
+
+	<div class="leaves">
+		<div class="leaves2">
+			<div class="leaves1"></div>
 		</div>
 	</div>
+</div>
 
+<div id="page3">
+	<a id="profile" class="smooth"></a>
+	<h1> Profile </h1>
+	
+</div>
+
+<div id="page4">
+	<a id="contact" class="smooth"></a>
+	<h1> Contact Me </h1>
+	
+		<div id="contact-area">
+			
+			<form method="post" action="contactengine.php">
+    			<label>Name</label>
+    			<input name="name" placeholder="Type Here">
+            
+    			<label>Email</label>
+    			<input name="email" type="email" placeholder="Type Here">
+            
+    			<label>Message</label>
+    			<textarea name="message" placeholder="Type Here"></textarea>
+            	
+            	<label>*What is 2+2?</label>
+				<input name="human" placeholder="Type Here">
+    			
+    			<input id="submit" name="submit" type="submit" value="Submit">
+        
+			</form>
+		
+		</div>
 
 </div>
+
+<div class="component">
+				<!-- Start Nav Structure -->
+				<button class="cn-button" id="cn-button">+</button>
+				<div class="cn-wrapper" id="cn-wrapper">
+				    <ul>
+				    	<li><a href="#page1"><span class="icon-home"></span></a></li>
+				    	<li><a href="#page2"><span class="icon-picture"></span></a></li>
+				    	<li><a href="#page3"><span class="icon-user"></span></a></li>  
+				    	<li><a href="#page4"><span class="icon-envelope-alt"></span></a></li>
+				    </ul>
+				</div>
+				<div id="cn-overlay" class="cn-overlay"></div>
+				<!-- End Nav Structure -->
+			</div>
+		</div><!-- /container -->
+		<script src="js/polyfills.js"></script>
+		<script src="js/demo1.js"></script>
+
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 
 
 </body>
