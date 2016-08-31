@@ -1,8 +1,3 @@
-#nav {
-	position: fixed;
-	z-index: 2;
-}
-
 #page1 {
 	background: #fff;
 	background-position: bottom;
@@ -11,6 +6,7 @@
 	float: left;
 	display: block;
 	position: relative;
+	z-index: 1;
 }
 
 .center {
@@ -28,77 +24,12 @@
 	overflow: visible;
 	margin: auto;
 	position: absolute;
-	top: -9999px;
+	z-index: 1;
+	top: -9700px;
     bottom: -9999px;
     left: -9999px;
     right: -9999px;
-	-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 150s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spinnerRotate;
-    -moz-animation-duration: 150s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 150s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
 }
-@-webkit-keyframes spinnerRotate
-{
-    from{-webkit-transform:rotate(0deg);}
-    to{-webkit-transform:rotate(360deg);}
-}
-@-moz-keyframes spinnerRotate
-{
-    from{-moz-transform:rotate(0deg);}
-    to{-moz-transform:rotate(360deg);}
-}
-@-ms-keyframes spinnerRotate
-{
-    from{-ms-transform:rotate(0deg);}
-    to{-ms-transform:rotate(360deg);}
-}
-
-#planet {
-	margin: -50% auto 0px auto;
-	float: none;
-	display: block;
-	width: 100%;
-	max-width: 1203px;
-	right: -25%;
-	left: -25%;
-	position: absolute;
-	-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 100s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spinnerRotate;
-    -moz-animation-duration: 100s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 100s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-}
-@-webkit-keyframes spinnerRotate
-{
-    from{-webkit-transform:rotate(0deg);}
-    to{-webkit-transform:rotate(360deg);}
-}
-@-moz-keyframes spinnerRotate
-{
-    from{-moz-transform:rotate(0deg);}
-    to{-moz-transform:rotate(360deg);}
-}
-@-ms-keyframes spinnerRotate
-{
-    from{-ms-transform:rotate(0deg);}
-    to{-ms-transform:rotate(360deg);}
-}
-
 
 #moon {
 	float: none;
@@ -107,7 +38,7 @@
 	overflow: visible;
 	margin: auto;
 	position: absolute;
-	top: -9999px;
+	top: -9700px;
     bottom: -9999px;
     left: -9999px;
     right: -9999px;
@@ -331,4 +262,74 @@ p {
 	width: 100%;
 	z-index: 2;
 	position: relative;
+}
+
+
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    display: inline-block;
+    z-index: 500;
+    width: 100%;
+    text-align: center;
+}
+
+/* Float the list items side by side */
+ul.topnav li {display: inline-block;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    font-family: 'Ubuntu', sans-serif;
+	font-size: 18pt; 
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li a:active {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
