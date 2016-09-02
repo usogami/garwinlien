@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
+	<meta id="meta" name="viewport"
+content="width=device-width; initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Art of Garwin Lien</title>
 
@@ -9,10 +10,13 @@
 
 <link rel="stylesheet" type="text/css" href="cssreset.css">
 <link rel="stylesheet" type="text/css" href="garwin.css">
-<link rel="stylesheet" href="dist/css/lightbox.min.css">
+
 
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+<link rel="stylesheet" href="src/css/swipebox.min.css">
+<script src="lib/jquery-2.1.0.min.js"></script>
+<script src="src/js/jquery.swipebox.min.js"></script>
 
 
 <script type="text/javascript">
@@ -33,7 +37,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 
 
-	<script src="dist/js/lightbox-plus-jquery.min.js"></script>
+	
 
 
 <ul class="topnav" id="myTopnav">
@@ -66,16 +70,16 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	<a id="gallery" class="smooth"></a>
 	<h1> Gallery </h1>
 	<div id="thumbnailwrap">
-		<a class="example-image-link" href="https://raw.githubusercontent.com/usogami/garwinlien/gh-pages/imgs/portfolio/gXcposter1.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/portfolio/gxcthumb1.png" alt="" /></a>
-		<a class="example-image-link" href="https://raw.githubusercontent.com/usogami/garwinlien/gh-pages/imgs/portfolio/gXcposter2.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/portfolio/gxcthumb2.png" alt="" /></a>
-		<a class="example-image-link" href="https://raw.githubusercontent.com/usogami/garwinlien/gh-pages/imgs/portfolio/gXcposter3.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/portfolio/gxcthumb3.png" alt="" /></a>
-		<a class="example-image-link" href="https://raw.githubusercontent.com/usogami/garwinlien/gh-pages/imgs/portfolio/gXcposter4.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/portfolio/gxcthumb4.png" alt="" /></a>
-		<a class="example-image-link" href="https://raw.githubusercontent.com/usogami/garwinlien/gh-pages/imgs/portfolio/gXcposter5.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/portfolio/gxcthumb5.png" alt="" /></a>
-		<a class="example-image-link" href="https://raw.githubusercontent.com/usogami/garwinlien/gh-pages/imgs/portfolio/gXcposter6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/portfolio/gxcthumb6.png" alt="" /></a>
+		<a class="swipebox" title="My Caption" href="https://raw.githubusercontent.com/usogami/garwinlien/gh-pages/imgs/portfolio/gXcposter1.jpg" ><img class="example-image" src="imgs/portfolio/gxcthumb1.png" alt="" /></a>
+		<a class="swipebox" title="My Caption" href="https://raw.githubusercontent.com/usogami/garwinlien/gh-pages/imgs/portfolio/gXcposter2.jpg" ><img class="example-image" src="imgs/portfolio/gxcthumb2.png" alt="" /></a>
+		<a class="swipebox" title="My Caption"href="https://raw.githubusercontent.com/usogami/garwinlien/gh-pages/imgs/portfolio/gXcposter3.jpg" ><img class="example-image" src="imgs/portfolio/gxcthumb3.png" alt="" /></a>
+		<a class="swipebox" title="My Caption" href="https://raw.githubusercontent.com/usogami/garwinlien/gh-pages/imgs/portfolio/gXcposter4.jpg" ><img class="example-image" src="imgs/portfolio/gxcthumb4.png" alt="" /></a>
+		<a class="swipebox" title="My Caption" href="https://raw.githubusercontent.com/usogami/garwinlien/gh-pages/imgs/portfolio/gXcposter5.jpg" ><img class="example-image" src="imgs/portfolio/gxcthumb5.png" alt="" /></a>
+		<a class="swipebox" title="My Caption" href="https://raw.githubusercontent.com/usogami/garwinlien/gh-pages/imgs/portfolio/gXcposter6.jpg" ><img class="example-image" src="imgs/portfolio/gxcthumb6.png" alt="" /></a>
 
 
 
-		<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="imgs/starthumb.png" alt="" /></a>
+		<a class="swipebox" title="My Caption" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" ><img class="example-image" src="imgs/starthumb.png" alt="" /></a>
 	</div>
 	
 
@@ -114,6 +118,14 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+</script>
+
+<script type="text/javascript">
+;( function( $ ) {
+
+	$( '.swipebox' ).swipebox();
+
+} )( jQuery );
 </script>
 
 <script>
