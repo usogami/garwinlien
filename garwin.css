@@ -176,7 +176,7 @@
 
 #page2 {
 	background: white;
-	height: 2000px;
+	height: 3000px;
 	float: left;
 	width: 100%;
 	z-index: 2;
@@ -187,6 +187,7 @@
 	margin: auto;
 	text-align: center;
 	display: inline-block;
+	width: 100%;
 }
 
  h1 {
@@ -197,6 +198,31 @@
 	margin: 50px auto 10px auto;
 }
 
+ h2 {
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 21pt;
+	text-align: center;
+	margin: 50px auto 10px auto;
+}
+
+ h2 a {
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 21pt;
+	text-align: center;
+	margin: 50px auto 10px auto;
+	background-color: black;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+ h2 a:hover {
+	color: white;
+	background-color: #555;
+}
 
 
 .leaves {
@@ -256,7 +282,7 @@ p {
 }
 
 #page4 {
-	background: white;
+	background: none;
 	height: 2000px;
 	float: left;
 	width: 100%;
@@ -266,13 +292,14 @@ p {
 
 
 
+
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(0,0,0,0.8);
     position: fixed;
     display: inline-block;
     z-index: 500;
@@ -297,7 +324,7 @@ ul.topnav li a {
 }
 
 /* Change background color of links on hover */
-ul.topnav li a:hover {background-color: #555;}
+ul.topnav li a:hover {background-color: black;}
 
 ul.topnav li a:active {background-color: #555;}
 
