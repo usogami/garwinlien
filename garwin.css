@@ -1,253 +1,219 @@
+
+
+#wrapper {
+background: black;
+
+}
+
 #page1 {
-	background: #fff;
-	background-position: bottom;
-	height: 1200px;
-	width: 100%;
-	float: left;
-	display: block;
-	position: relative;
-	z-index: 1;
-}
+  width: 100%;
+  height: 1000px;
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#138490, #5aa972); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#138490, #5aa972); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#138490, #5aa972); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#138490, #5aa972); /* Standard syntax */
 
-.center {
-	position: fixed;
-	top: 0;
-	margin: 20px auto 0 auto;
-	width: 100%
 
 }
 
-#sun {
-	float: none;
-	text-align: center;
-	display: block;
-	overflow: visible;
-	margin: auto;
-	position: absolute;
-	z-index: 1;
-	top: -9700px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
+.sunwrap {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+-webkit-backface-visibility: hidden;
+-webkit-transform: rotate(0deg) ;
 }
 
-#moon {
-	float: none;
-	text-align: center;
-	display: block;
-	overflow: visible;
-	margin: auto;
-	position: absolute;
-	top: -9700px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
-	-webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 120s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spinnerRotate;
-    -moz-animation-duration: 120s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 120s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-}
-@-webkit-keyframes spinnerRotate
-{
-    from{-webkit-transform:rotate(0deg);}
-    to{-webkit-transform:rotate(360deg);}
-}
-@-moz-keyframes spinnerRotate
-{
-    from{-moz-transform:rotate(0deg);}
-    to{-moz-transform:rotate(360deg);}
-}
-@-ms-keyframes spinnerRotate
-{
-    from{-ms-transform:rotate(0deg);}
-    to{-ms-transform:rotate(360deg);}
+.sun {
+  position: relative;
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
 }
 
-.clouds {
-	background-image: url(imgs/cloudsa.png); 
-	background-repeat: repeat-x;
-	background-color: ;
-	width: 100%;
-	height: 454px;
-	display: block;
-	float: left;
-	margin: 0;
-	bottom: 0;
-	position: absolute;
-	animation: animatedBackground 110s linear infinite;
-	-moz-animation: animatedBackground 110s linear infinite;
-	-webkit-animation: animatedBackground 110s linear infinite;
-	-ms-animation: animatedBackground 110s linear infinite;
-	-o-animation: animatedBackground 110s linear infinite;
+.star {
+  position: absolute;
+  margin: auto;
 }
 
-@keyframes animatedBackground {
-	0% { background-position: 0 0; }
-	100% { background-position: 2000px 0; }
-}
-@-moz-keyframes animatedBackground {
-	0% { background-position: 0 0; }
-	100% { background-position: 2000px 0; }
-}
-@-webkit-keyframes animatedBackground {
-	0% { background-position: 0 0; }
-	100% { background-position: 2000px 0; }
-}
-@-ms-keyframes animatedBackground {
-	0% { background-position: 0 0; }
-	100% { background-position: 2000px 0; }
-}
-@-o-keyframes animatedBackground {
-	0% { background-position: 0 0; }
-	100% { background-position: 2000px 0; }
+.rays {
+  position: absolute;
+  margin: auto;
+  -webkit-transform-style: preserve-3d;
+-webkit-backface-visibility: hidden;
+   -webkit-animation: animationName 5s infinite;
+   -moz-animation: animationName 5s infinite;
+   -o-animation: animationName 5s infinite;
+    animation: animationName 5s infinite;
 }
 
+@keyframes animationName {
+  0%   { opacity:0.5; }
+  50%  { opacity:1; }
+  100% { opacity:0.5; }
+}
+@-o-keyframes animationName{
+  0%   { opacity:0.5; }
+  50%  { opacity:1; }
+  100% { opacity:0.5; }
+}
+@-moz-keyframes animationName{
+  0%   { opacity:0.5; }
+  50%  { opacity:1; }
+  100% { opacity:0.5; }
+}
+@-webkit-keyframes animationName{
+  0%   { opacity:0.5; }
+  50%  { opacity:1; }
+  100% { opacity:0.5; }
+}   
 
-
-
-
-
-
-
-
-
-
+.star img, .rays img{
+  width: 100%;
+}
 
 
 #page2 {
-	background: white;
-	height: 3000px;
-	float: left;
-	width: 100%;
-	z-index: 2;
-	position: relative;
+  width: 100%;
+  height: 1000px;
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#5aa972, #fff5c3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#5aa972, #fff5c3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5aa972, #fff5c3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5aa972, #fff5c3); /* Standard syntax */
 }
-
-#thumbnailwrap {
-	margin: auto;
-	text-align: center;
-	display: inline-block;
-	width: 100%;
-}
-
- h1 {
-	color: black;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 36pt;
-	text-align: center;
-	margin: 50px auto 10px auto;
-}
-
- h2 {
-	color: black;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 21pt;
-	text-align: center;
-	margin: 50px auto 10px auto;
-}
-
- h2 a {
-	color: white;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: bold;
-	text-decoration: none;
-	font-size: 21pt;
-	text-align: center;
-	margin: 50px auto 10px auto;
-	background-color: black;
-	padding: 10px;
-	border-radius: 10px;
-}
-
- h2 a:hover {
-	color: white;
-	background-color: #555;
-}
-
-
-.leaves {
-	background-image: url(imgs/leaves3.png); 
-	background-repeat: repeat-x;
-	background-position: bottom;
-	background-color: ;
-	width: 100%;
-	height: 409px;
-	display: block;
-	float: left;
-	margin: 0;
-	bottom: 0;
-	position: absolute;
-
-}
-
-
-
-.leaves1 {
-	background-image: url(imgs/leaves1.png); 
-	background-position: bottom;
-	background-repeat: repeat-x;
-	width: 100%;
-	height: 228px;
-	bottom: 0;
-	margin-top: 395px;
-	position: absolute;
-
-}
-
-.leaves2 {
-	background-image: url(imgs/leaves2.png); 
-	background-position: bottom;
-	background-repeat: repeat-x;
-	width: 100%;
-	height: 299px;
-	bottom: 0;
-	margin-top: 110px;
-
-}
-
 
 #page3 {
-	background: #49785d;
-	height: 2000px;
-	float: left;
-	width: 100%;
-	z-index: 2;
-	position: relative;
-}
-
-p {
-	font-family: 'Lato', sans-serif;
-	font-size: 14pt;
-	line-height: 16pt;
+  width: 100%;
+  height: 1000px;
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff5c3, #f7a661); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff5c3, #f7a661); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff5c3, #f7a661); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff5c3, #f7a661); /* Standard syntax */
+    position: relative;
 }
 
 #page4 {
-	background: none;
-	height: 2000px;
-	float: left;
-	width: 100%;
-	z-index: 2;
-	position: relative;
+  width: 100%;
+  height: 1000px;
+      background: #3b0849;
+      z-index: 2;
+      position: relative;
+}
+
+h1 {
+  color: #000;
+  font-family: 'Arvo', serif;
+  font-size: 24pt; 
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.thumbnail {
+  min-width: 138px;
+  max-width: 200px;
+  width: 10%;
+  margin: 5px;
+  box-shadow: 0px 0px 5px 1px #2a584e ;
+}
+
+#gallery a {
+  text-decoration: none;
+  border: none;
+}
+
+#gallery {
+  width: 80%;
+  min-width: 300px;
+  padding: 50px 10px;
+  margin: auto;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+#profile {
+  width: 80%;
+  min-width: 300px;
+  padding: 50px 10px;
+  margin: auto;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+.profilesection {
+  width: 80%;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.75);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #000;
+  font-family: 'Arvo', serif;
+  font-size: 18pt; 
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12pt; 
+  text-align: justify;
+  line-height: 15pt;
+  margin: 10px 0px;
+}
+li {
+  color: #000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12pt; 
+  text-align: justify;
+  line-height: 15pt;
+}
+
+strong {
+  font-weight: bold;
+}
+
+hr {
+  border-bottom: black solid 1px;
+  margin: 30px auto;
 }
 
 
+.mountain {
+background: url(images/mountain.png) center;
+height: 560px;
+bottom: 0;
+width: 100%;
+z-index: 2;
+position: absolute;
+-webkit-transform-style: preserve-3d;
+-webkit-backface-visibility: hidden;
+-webkit-transform: rotate(0deg) ;
+}
 
+.contactform {
+margin: auto;
+display: block;
 
-/* Remove margins and padding from the list, and add a black background color */
+}
+
+/* nav bar - Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     position: fixed;
     display: inline-block;
     z-index: 500;
@@ -262,7 +228,7 @@ ul.topnav li {display: inline-block;}
 ul.topnav li a {
     display: inline-block;
     color: #f2f2f2;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 	font-size: 18pt; 
     text-align: left;
     padding: 14px 16px;
@@ -272,7 +238,7 @@ ul.topnav li a {
 }
 
 /* Change background color of links on hover */
-ul.topnav li a:hover {background-color: black;}
+ul.topnav li a:hover {background-color: #555;}
 
 ul.topnav li a:active {background-color: #555;}
 
@@ -289,12 +255,11 @@ ul.topnav li.icon {display: none;}
     float: right;
     display: inline-block;
   }
-  ul.topnav {text-align: left;}
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 @media screen and (max-width:680px) {
-  ul.topnav.responsive {}
+  ul.topnav.responsive {position: fixed;}
   ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
@@ -306,6 +271,6 @@ ul.topnav li.icon {display: none;}
   }
   ul.topnav.responsive li a {
     display: block;
-    text-align: left;
+    text-align: center;
   }
 }
