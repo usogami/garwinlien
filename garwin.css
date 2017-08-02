@@ -205,7 +205,6 @@ margin: auto;
 display: block;
 max-width: 368px;
 text-align: center;
-
 }
 
 /* nav bar - Remove margins and padding from the list, and add a black background color */
@@ -274,4 +273,10 @@ ul.topnav li.icon {display: none;}
     display: block;
     text-align: center;
   }
+}
+
+@media screen and (max-width:360) {
+.contactform {
+max-width: 310px;
+}
 }
