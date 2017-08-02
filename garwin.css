@@ -149,7 +149,6 @@ h1 {
 
 .profilesection {
   width: 80%;
-  min-width: 300px;
   background: rgba(255, 255, 255, 0.75);
   margin: 20px auto;
   padding: 20px;
@@ -204,6 +203,8 @@ position: absolute;
 .contactform {
 margin: auto;
 display: block;
+max-width: 368px;
+text-align: center;
 
 }
 
