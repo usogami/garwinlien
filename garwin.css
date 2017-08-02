@@ -183,7 +183,6 @@ strong {
 }
 
 hr {
-  border-bottom: black solid 1px;
   margin: 30px auto;
 }
 
@@ -201,10 +200,43 @@ position: absolute;
 }
 
 .contactform {
-margin: auto;
 display: block;
-max-width: 368px;
 text-align: center;
+
+margin: 20px auto;
+padding: 20px;
+  width: 80%;
+}
+
+.contactform input, .contactform textarea, .contactform button {
+  display: block;
+
+  width: 80%;
+}
+
+.contactform input, .contactform textarea {
+  color: #000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12pt; 
+  line-height: 15pt;
+  padding: 5px;
+  
+  margin: 10px auto;
+  border: none;
+}
+
+.contactform textarea  {
+  height: 200px;
+}
+
+.contactform button {
+  color: #000;
+  font-family: 'Arvo', serif;
+  font-size: 18pt; 
+  max-width: 300px;
+  background-color: #fff5c3;
+  border: none;
+  margin: 20px auto;
 }
 
 /* nav bar - Remove margins and padding from the list, and add a black background color */
@@ -275,7 +307,7 @@ ul.topnav li.icon {display: none;}
   }
 }
 
-@media screen and (max-width:360) {
+@media screen and (max-width:360px) {
 .contactform {
 max-width: 310px;
 }
