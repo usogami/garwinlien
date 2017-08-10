@@ -202,10 +202,13 @@ position: absolute;
 .contactform {
 display: block;
 text-align: center;
-
-margin: 20px auto;
-padding: 20px;
+margin: auto;
+padding: 50px 20px;
   width: 80%;
+}
+
+.contactform h1 {
+  color: white;
 }
 
 .contactform input, .contactform textarea, .contactform button {
