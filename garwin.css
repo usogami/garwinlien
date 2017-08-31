@@ -88,7 +88,7 @@ background: black;
 
 #page3 {
   width: 100%;
-  height: 1600px;
+  height: 1800px;
     background: black; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#fff5c3, #f7a661); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#fff5c3, #f7a661); /* For Opera 11.1 to 12.0 */
@@ -170,10 +170,14 @@ h1 {
 
 .profileskillsection {
   display: inline-block;
-  width: 200px;
+  width: 175px;
   margin: auto;
   text-align: justify;
   vertical-align: top;
+}
+
+.profileskillsection p {
+  margin: 0px 0px 10px 0px;
 }
 
 .profilesection  .profileskillsection li {
@@ -207,7 +211,7 @@ p {
   color: #000;
   font-family: 'PT Sans', sans-serif;
   font-size: 12pt; 
-  text-align: justify;
+  text-align: left;
   line-height: 15pt;
   margin: 10px 0px;
 }
@@ -322,7 +326,17 @@ ul.topnav li a:active {background-color: #555;}
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
 
+@media screen and (max-width:850px) {
+.profileskillsection {
+  width: 165px;
+}
+}
 
+@media screen and (max-width:790px) {
+.profileskillsection {
+  width: 32%;
+}
+}
 
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
@@ -352,8 +366,24 @@ ul.topnav li.icon {display: none;}
   }
 }
 
+@media screen and (max-width:599px) {
+.profileskillsection {
+  width: 100%;
+  display: block;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  margin: 0px auto 20px auto;
+}
+
+.profilesection .bottom {
+  border-bottom: 0px ;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+}
+
 @media screen and (max-width:360px) {
 .contactform {
-max-width: 310px;
+display: block;
 }
 }
