@@ -17,6 +17,25 @@ background: black;
 
 }
 
+.artist {
+  text-align: center;
+  margin: 300px auto 0px auto;
+  position: absolute;
+  z-index: 10;
+  display: block;
+  width: 100%;
+}
+
+.logo {
+  width: 65px;
+  text-align: center;
+}
+
+.artist h1 {
+  padding-top: 5px;
+  text-shadow: 0 0 20px #fff;
+}
+
 .sunwrap {
   position: fixed;
   width: 100%;
@@ -74,6 +93,95 @@ background: black;
 .star img, .rays img{
   width: 100%;
 }
+
+#cloudleft {
+  position:relative;
+  height:500px;
+  width:500px;
+  margin:0 auto;
+  padding-top: 50px;
+  float: left;
+}
+
+#cloudleft img {
+  position:absolute;
+  left:0;
+animation-name: cloudleftFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes cloudleftFadeInOut {
+  0% {
+    opacity:0;
+  }
+  40% {
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  90% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+#cloudleft img:nth-of-type(1) {
+  animation-delay: 0s;
+}
+#cloudleft img:nth-of-type(2) {
+  animation-delay: 5s;
+}
+
+#cloudright {
+  position:relative;
+  height:500px;
+  width:500px;
+  margin:0 auto;
+  padding-top: 350px;
+  float: right;
+}
+
+#cloudright img {
+  position:absolute;
+  left:0;
+animation-name: cloudrightFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes cloudrightFadeInOut {
+  0% {
+    opacity:0;
+  }
+  40% {
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  90% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+#cloudright img:nth-of-type(1) {
+  animation-delay: 0s;
+}
+#cloudright img:nth-of-type(2) {
+  animation-delay: 5s;
+}
+
+
+
 
 
 #page2 {
@@ -325,6 +433,16 @@ ul.topnav li a:active {background-color: #555;}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:1010px) {
+#cloudleft {
+  display: none;
+}
+
+#cloudright {
+  display: none;
+}
+}
 
 @media screen and (max-width:850px) {
 .profileskillsection {
