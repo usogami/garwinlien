@@ -19,7 +19,7 @@ background: black;
 
 .artist {
   text-align: center;
-  margin: 300px auto 0px auto;
+  margin: 305px auto 0px auto;
   position: absolute;
   z-index: 10;
   display: block;
@@ -32,8 +32,10 @@ background: black;
 }
 
 .artist h1 {
-  padding-top: 5px;
-  text-shadow: 0 0 20px #fff;
+  margin-top: -5px; 
+  padding-top: 0px;
+  text-shadow: 0 0 15px #fff, 0 0 30px #fff, 0 0 50px #fff;
+  font-size: 21pt;
 }
 
 .sunwrap {
