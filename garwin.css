@@ -339,6 +339,43 @@ ul.topnav li.icon {display: none;}
 }
 
 
+@media screen and (max-width:599px) {
+
+#page2 {
+  height: 1500px;
+}
+
+#page3 {
+  height: 2500px;
+}
+
+#profile {
+  width: 90%;
+}
+
+.profileskillsection {
+  width: 100%;
+  display: block;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  margin: 0px auto 20px auto;
+}
+
+.profilesection {
+  width: 90%;
+}
+
+.profilesection .bottom {
+  border-bottom: 0px ;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+
+.profilesection  ul li {
+margin-top: 5px;
+}
+}
+
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:400px) {
   ul.topnav li:not(:first-child) {display: none;}
@@ -369,24 +406,21 @@ ul.topnav li.icon {display: none;}
   }
 }
 
-@media screen and (max-width:599px) {
-.profileskillsection {
-  width: 100%;
-  display: block;
-  padding-bottom: 20px;
-  border-bottom: 1px solid black;
-  margin: 0px auto 20px auto;
-}
-
-.profilesection .bottom {
-  border-bottom: 0px ;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-}
-}
 
 @media screen and (max-width:360px) {
 .contactform {
 display: block;
+}
+
+.profilesection {
+  padding: 15px;
+}
+
+.contactform{
+  width: 85%;
+}
+
+.contactform input, .contactform textarea, .contactform button {
+  width: 85%;
 }
 }
